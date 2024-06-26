@@ -1,0 +1,218 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #2f3b4c;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo img {
+    width: 80px;
+   /* margin: 0 auto 20px;*/
+   margin-top: 30px;
+    margin-left: 50px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar ul li.active,
+.sidebar ul li:hover {
+    background-color: #1f2a38;
+}
+
+.settings {
+  
+    padding: 20px;
+    position: relative;
+}
+
+.settings li {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.settings li i {
+    margin-right: 10px;
+}
+
+.main-content {
+    flex-grow: 1;
+    background-color: #f4f7f9;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.user-settings {
+    display: flex;
+    align-items: center;
+}
+
+.user-settings i {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.user-settings img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.dashboard-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.statistics > div {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.statistics .miles-statistics,
+.statistics .car-statistics {
+    height: 200px;
+}
+
+.recommendations {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.recommendation {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-width: 200px; /* Ensures the elements don't get too small */
+}
+
+.recommendation img {
+    width: 100%; /* Ensures the image takes the full width of the container */
+    height: auto; /* Maintains aspect ratio */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 10px; /* Optional: adds a rounded corner to the images */
+    object-fit: contain;
+    max-height: 150px; /* Adjust the height to fit your design */
+}
+
+.recommendation-info {
+    margin-top: 10px;
+}
+
+.recommendation-info h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.recommendation-info p {
+    margin: 5px 0 0;
+    color: gray;
+}
+
+.settings-menu {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 0%; /* Position it below the settings button */
+    left: 0; /* Align it with the left edge of the settings button */
+    background-color: #282727; /* Adjust color to match your design */
+    box-shadow: 0 4px 8px rgba(59, 189, 137, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    z-index: 1000; /* Ensure it's on top of other elements */
+}
+
+.settings-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;  
+}
+
+.settings-menu ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.settings-menu ul li:hover {
+    background-color: #f0f0f0;
+}
+

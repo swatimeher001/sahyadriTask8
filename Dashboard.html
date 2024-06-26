@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="images/motiv.png" alt="MyLogo.">
+        </div>
+        <ul>
+            <li class="active"><i class="fas fa-home"></i> Dashboard</li>
+            <li><i class="fas fa-car"></i> Assets</li>
+            <li><i class="fas fa-calendar-alt"></i> Booking</li>
+            <li><i class="fas fa-dollar-sign"></i> Sell Cars</li>
+            <li><i class="fas fa-shopping-cart"></i> Buy Cars</li>
+            <li><i class="fas fa-tools"></i> Services</li>
+            <li><i class="fas fa-calendar"></i> Calendar</li>
+            <li><i class="fas fa-envelope"></i> Messages</li>
+        </ul>
+        <div class="settings">
+           
+            <li id="settingsButton"><i class="fas fa-cog"></i> Settings</li>
+            <div id="settingsMenu" class="settings-menu">
+                <ul>
+                    <li>Profile</li>
+                    <li>Account</li>
+                    <li>Preferences</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
+            <li><i class="fas fa-sign-out-alt"></i> Log out</li>
+            
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="header">
+            <input type="text" placeholder="Search or type">
+            <div class="user-settings">
+                <i class="fas fa-bell"></i>
+                <img src="images/swati1.jpeg" alt="User">
+            </div>
+        </div>
+        <div class="dashboard-content">
+            <div class="cards">
+                <div class="card">
+                    <div class="card-title">Energy</div>
+                    <div class="card-value">45%</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Range</div>
+                    <div class="card-value">157%</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Break fluid</div>
+                    <div class="card-value">9%</div>
+                </div>
+                <div class="card">
+                    <div class="card-title">Tire Wear</div>
+                    <div class="card-value">25%</div>
+                </div>
+            </div>
+            <div class="statistics">
+                <div class="miles-statistics">
+                    <h3>Miles Statistics</h3>
+                    <canvas id="milesChart" width="400" height="200"></canvas>
+                </div>
+                <div class="car-statistics">
+                    <h3>Car Statistics</h3>
+                    <canvas id="carChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+            <div class="recommendations">
+                <div class="recommendation">
+                    <img src="images/car1.jpeg" alt="Mini Cooper">
+                    <div class="recommendation-info">
+                        <h4>Mini Cooper</h4>
+                        <p>64% Recommend</p>
+                    </div>
+                </div>
+                <div class="recommendation">
+                    <img src="images/car2.jpeg" alt="Porsche 911 Carrera">
+                    <div class="recommendation-info">
+                        <h4>Porsche 911 Carrera</h4>
+                        <p>74% Recommend</p>
+                    </div>
+                </div>
+                <div class="recommendation">
+                    <img src="images/car3.jpeg" alt="Porsche 911 Carrera">
+                    <div class="recommendation-info">
+                        <h4>Porsche 911 Carrera</h4>
+                        <p>74% Recommend</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/Chart.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
